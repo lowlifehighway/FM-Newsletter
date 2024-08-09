@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./public/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body
+    class="bg-CharcoalGrey min-h-[100dvh] font-medium transition-all duration-300 flex items-center justify-center max-md:items-stretch"
+  >
+    <main
+      id="form-container"
+      class="grid grid-cols-2 max-w-4xl items-center p-6 bg-white rounded-3xl max-md:grid-cols-1 max-md:p-0 max-md:rounded-t-none"
+    >
+      <div class="p-6 max-md:row-start-2 max-md:self-start max-sm:text-sm">
+        <h1
+          class="font-bold text-[3.5rem] text-DarkSlateGrey leading-normal mb-4 max-md:text-4xl"
+        >
+          Stay updated!
+        </h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="text-DarkSlateGrey flex flex-col gap-4 mb-10 mt-6">
+          <li class="flex gap-4 items-center">
+            <img src="./public/images/icon-list.svg" alt="" />
+            <p>Product discovery and building what matters</p>
+          </li>
+          <li class="flex gap-4 items-center">
+            <img src="./public/images/icon-list.svg" alt="" />
+            <p>Measuring to ensure updates are a success</p>
+          </li>
+          <li class="flex gap-4 items-center">
+            <img src="./public/images/icon-list.svg" alt="" />
+            <p>And much more!</p>
+          </li>
+        </ul>
+        <!-- Sign-up form start -->
+
+        <form action="./success.html" class="flex flex-col gap-4 relative">
+          <label for="Email" class="flex flex-col gap-2">
+            Email address
+            <input
+              id="Email"
+              name="Email"
+              type="email"
+              required
+              placeholder="email@company.com"
+              class="p-4 text-lg border-2 hover:border-black rounded-xl transition-all duration-300 max-sm:p-3 max-sm:text-base"
+            />
+            <span class="absolute top-0 right-0 text-Tomato font-bold"
+              >Valid email required</span
+            ></label
+          >
+          <input
+            id="submit-button"
+            name="submit-button"
+            type="submit"
+            value="Subscribe to monthly newsletter"
+            class="py-6 px-10 bg-CharcoalGrey text-white rounded-xl font-bold transition-all duration-300 hover:bg-Tomato shadow-Tomato hover:shadow-2xl cursor-pointer max-sm:px-7 max-sm:py-4"
+          />
+        </form>
+        <!-- Sign-up form end -->
+      </div>
+      <picture
+        class="w-fit justify-self-center max-md:w-full max-md:self-start"
+      >
+        <source
+          media="(max-width: 640px)"
+          srcset="./public/images/illustration-sign-up-mobile.svg"
+        />
+        <img
+          src="./public/images/illustration-sign-up-desktop.svg"
+          alt=""
+          class="w-full"
+        />
+      </picture>
+    </main>
+    <!-- Success message start -->
+
+    <!-- Success message end -->
+  </body>
+</html>
